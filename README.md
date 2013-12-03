@@ -31,6 +31,8 @@ Injectus.capture do
   require 'bundler'
   Bundler.require(:default)
 end
+
+# application code that may or may not change...
 ```
 
 
@@ -76,7 +78,7 @@ versions of MRI (1.9.3) that make additional improvements in code loading
 (http://www.rubyinside.com/ruby-1-9-3-faster-loading-times-require-4927.html).
 
 ### Future Viability
-This could be a viable project if it was possible to
+This could be a viable project if it was possible to:
 * reliably track the load order of all source files compiled into instruction sequences
 * load a bytecode sequence directly into the VM without first unmarshalling into ruby objects
 
